@@ -1,13 +1,19 @@
 library(SqlRender)
 library(DatabaseConnector)
-library(CohortMethod)
+library(ROhdsiWebApi)
+library(CohortGenerator)
 library(Achilles)
+library(CohortDiagnostics)
 library(Characterization)
 library(FeatureExtraction)
+library(CohortMethod)
 
+library(Capr)
+library(tidyverse)
 library(knitr)
 library(remotes)
 library(devtools)
+library(htmltools)
 
 # Connect to database
 connectionDetails <- DatabaseConnector::createConnectionDetails(
