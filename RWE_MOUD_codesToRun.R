@@ -593,47 +593,36 @@ for (folder in folders) {
 
 getResultsDataModelSpecifications() # what does it do? 
 
+# If want to visualize, un-comment the below codes and run. 
 ########################### Create Cohort Tables ###############################
-
-cohortsBupMethPrim <- data.frame(
-  cohortId = c(
-    1790262,
-    1790261,
-    1789470),
-  cohortName = c(
-    "Buprenorphine exposure",
-    "Methadone exposure",
-    "OUD or opioid overdose hospitalization"
-  )
-)
-
-cohortsBupNalPrim <- data.frame(
-  cohortId = c(
-    1790262,
-    1790263,
-    1789470),
-  cohortName = c(
-    "Buprenorphine exposure",
-    "Naltrexone exposure",
-    "OUD or opioid overdose hospitalization"
-  )
-)
-
-cohortsList <- list(cohortsBupMethPrim, cohortsBupNalPrim)
+# cohorts <- data.frame(
+#   cohortId = c(
+#     1790262, # buprenorphine
+#     1790261, # methadone
+#     1789263, # naltrexone
+#     1789470, # primary outcome
+#     1789694, # secondary outcome 1
+#     1789695), # secondary outcome 2
+#   cohortName = c(
+#     "Buprenorphine exposure",
+#     "Methadone exposure",
+#     "Primary outcome outcome, OUD or opioid overdose hospitalization", 
+#     "Secondary outcome 1, OUD only", 
+#     "Secondary outcome 2, opioid overdose only"
+#   )
+# )
 
 ########################## Create SQLITE File ##################################
-for (i in 1:9) {
-  insertExportedResultsInSqlite(
-    sqliteFileName = file.path(folders[[i]], "myResults.sqlite"), 
-    exportFolder = file.path(folders[[i]], "export"), 
-    cohorts = cohortsList[[i]]
-  )
-}
+# for (i in 1:9) {
+#   insertExportedResultsInSqlite(
+#     sqliteFileName = file.path(folders[[i]], "myResults.sqlite"), 
+#     exportFolder = file.path(folders[[i]], "export"), 
+#     cohorts = cohorts
+#   )
+# }
 
 
 ########################## Visualize using R Shiny #############################
-# If want to visualize, un-comment the below codes and run. 
-
 # launchResultsViewerUsingSqlite(
 #   sqliteFileName = file.path(folder, "myResults.sqlite")
 # )
