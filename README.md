@@ -3,12 +3,12 @@ Comparative Real-world Effectiveness of Medications for Opioid Use Disorder
 
 <img src="https://img.shields.io/badge/Study%20Status-Repo%20Created-lightgray.svg" alt="Study Status: Repo Created">
 
-- Analytics use case(s): **-**
-- Study type: Population-level effect estimation
-- Tags: **-**
+- Analytics use case(s): Population-Level Estimation
+- Study type: Clinical Application
+- Tags: opioid use disorder (OUD), opioid overdose, medications for OUD,
 - Study lead: Linying Zhang
 - Study lead forums tag: **[[Lead tag]](https://forums.ohdsi.org/u/[Lead tag])**
-- Study start date: **-**
+- Study start date: May 1, 2024
 - Study end date: **-**
 - Protocol: [https://github.com/causailab/RWE-MOUD/Protocol.html](https://causailab.github.io/RWE-MOUD/Protocol.html)
 - Publications: **-**
