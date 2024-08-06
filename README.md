@@ -10,7 +10,7 @@ Comparative Real-world Effectiveness of Medications for Opioid Use Disorder
 - Study lead forums tag: **[[Lead tag]](https://forums.ohdsi.org/u/[Lead tag])**
 - Study start date: **-**
 - Study end date: **-**
-- Protocol: https://github.com/causailab/RWE-MOUD/Protocol.html
+- Protocol: [https://github.com/causailab/RWE-MOUD/Protocol.html](https://causailab.github.io/RWE-MOUD/Protocol.html)
 - Publications: **-**
 - Results explorer: **-**
 
